@@ -26,6 +26,32 @@
                             </div>
                         @endif
                     </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-user fa-fw"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="last_name" class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}" required autofocus placeholder="{{ trans('global.last_name') }}" value="{{ old('last_name', null) }}">
+                        @if($errors->has('last_name'))
+                            <div class="invalid-feedback">
+                                {{ $errors->first('last_name') }}
+                            </div>
+                        @endif
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-user fa-mobile"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="mobile" class="form-control{{ $errors->has('mobile') ? ' is-invalid' : '' }}" required autofocus placeholder="{{ trans('global.mobile') }}" value="{{ old('last_name', null) }}">
+                        @if($errors->has('last_name'))
+                            <div class="invalid-feedback">
+                                {{ $errors->first('last_name') }}
+                            </div>
+                        @endif
+                    </div>
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
