@@ -20,9 +20,7 @@
 
                             <h1>Learn English</h1>
 
-                            <p>
-
-                                    Eexcel provides innovative ways to master English speaking by guiding through the basics of social language to more advanced usage in social interactions. Our online courses will get you on your way to acquiring the confidence and natural flow to express yourself freely without having to worry about embarrassing and mistakes.
+                            <p>Eexcel provides innovative ways to master English speaking by guiding through the basics of social language to more advanced usage in social interactions. Our online courses will get you on your way to acquiring the confidence and natural flow to express yourself freely without having to worry about embarrassing and mistakes.
                             </p>
 
                             <a href="/course" class="btn_1">View Course </a>

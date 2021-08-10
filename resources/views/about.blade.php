@@ -114,7 +114,7 @@
 
                     <div class="learning_img">
 
-                        <img src="img/learning_img.png" alt="">
+                        <img src="img/eexcell.svg" alt="">
 
                     </div>
 
