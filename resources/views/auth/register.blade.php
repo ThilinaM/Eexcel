@@ -42,13 +42,13 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
-                                <i class="fa fa-user fa-mobile"></i>
+                                <i class="fa fa-mobile fa-fw"></i>
                             </span>
                         </div>
-                        <input type="text" name="mobile" class="form-control{{ $errors->has('mobile') ? ' is-invalid' : '' }}" required autofocus placeholder="{{ trans('global.mobile') }}" value="{{ old('last_name', null) }}">
-                        @if($errors->has('last_name'))
+                        <input type="text" name="mobile_no" class="form-control{{ $errors->has('mobile_no') ? ' is-invalid' : '' }}" required autofocus placeholder="{{ trans('global.mobile') }}" value="{{ old('mobile_no', null) }}">
+                        @if($errors->has('mobile_no'))
                             <div class="invalid-feedback">
-                                {{ $errors->first('last_name') }}
+                                {{ $errors->first('mobile_no') }}
                             </div>
                         @endif
                     </div>

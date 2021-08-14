@@ -24,12 +24,14 @@
             </div>
 
             <div class="row">
+               <div class="col-md-12">
                 <label>Eexcel provides innovative ways to master English speaking by guiding through the basics of social language to more advanced usage in social interactions. Our online courses will get you on your way to acquiring the confidence and natural flow to express yourself freely without having to worry about embarrassing and mistakes.
                     Learn from actual conversations in actual situations.
                     Feel confident in understanding and being understood.
                     Sound more natural and avoid mistakes.
                     Learn thousands of words, expressions, idioms commonly used in actual conversations.
                 </label>
+               </div>
                 <!-- <div class="col-sm-6 col-xl-3 align-self-center">
 
                     <div class="single_feature_text ">
