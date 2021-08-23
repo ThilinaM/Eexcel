@@ -50,14 +50,18 @@
                                 <li class="nav-item">
                                     @guest
                                     <a class="nav-link" href="/login">Login</a>
-                                    @else
-                                    <a class="nav-link" href="/admin">Dashboard</a>
+                                    @else                                   
+                                    <a class="nav-link" href="/login">Dashboard</a>
                                     @endguest   
                                 </li>
                                 <li class="nav-item">
                                     @guest
                                     @else
-                                    <a class="nav-link" href="logout">Logout</a>
+                                   
+                                    <form id="logoutform" action="{{ route('logout') }}" method="POST" >
+                                            {{ csrf_field() }}
+                                            <input type="submit" class="nav-link" value="Logout">
+                                        </form>
                                     @endguest  
                                 </li>
 
