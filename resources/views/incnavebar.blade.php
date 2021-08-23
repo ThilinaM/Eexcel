@@ -47,6 +47,19 @@
                                     <a class="nav-link" href="contact">Contact</a>
 
                                 </li>
+                                <li class="nav-item">
+                                    @guest
+                                    <a class="nav-link" href="/login">Login</a>
+                                    @else
+                                    <a class="nav-link" href="/admin">Dashboard</a>
+                                    @endguest   
+                                </li>
+                                <li class="nav-item">
+                                    @guest
+                                    @else
+                                    <a class="nav-link" href="logout">Logout</a>
+                                    @endguest  
+                                </li>
 
                                 <li class="d-none d-lg-block">
 
