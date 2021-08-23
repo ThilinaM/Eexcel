@@ -3,7 +3,7 @@
 Route::view('/', 'index');
 Route::view('/contact', 'contact');
 Route::view('/about', 'about');
-Route::view('/course', 'course');
+Route::get('/course', 'MainController@course');
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'admin']], function () {

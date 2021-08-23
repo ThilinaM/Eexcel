@@ -45,7 +45,7 @@
                     </div>
 
                 </div> -->
-
+               @foreach ($courses as $course)
                 <div class="col-sm-12 col-xl-6">
 
                     <div class="single_feature">
@@ -54,14 +54,14 @@
 
                             {{-- <span class="single_feature_icon"><i class="ti-layers"></i></span> --}}
 
-                            <h4>Advanced Spoken English.</h4>
+                            <h4> {{ $course->name }}</h4>
 
-                            <div>details</div>
+                            <div>{!! $course->description !!}</div>
 
 <h4>
-        For just 950 /=
+    {{ $course->price }}
 </h4>
-<a class="btn_1" href="/login">click to get 5 free lessons </a> 
+<a class="btn_1" href="{{$course->link}}">{{ $course->link_text }} </a> 
 
 
                         </div>
@@ -69,34 +69,8 @@
                     </div>
 
                 </div>
-
-                <div class="col-sm-12 col-xl-6">
-
-                    <div class="single_feature">
-
-                        <div class="">
-
-                            {{-- <span class="single_feature_icon"><i class="ti-new-window"></i></span> --}}
-
-                            <h4>name </h4>
-
-                        <div>details</div>
-
-<h4>
-        For just 550 /=
-</h4>
-<a class="btn_1" href="/login">click to get 5 free lessons </a> 
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-              
-
-            </div>
+                @endforeach
+                 </div>
 
         </div>
 

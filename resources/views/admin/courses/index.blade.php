@@ -29,6 +29,9 @@
                             {{ trans('cruds.course.fields.name') }}
                         </th>
                         <th>
+                            {{ trans('cruds.course.fields.price') }}
+                        </th>
+                        <th>
                             {{ trans('cruds.course.fields.cover') }}
                         </th>
                         <th>
@@ -50,6 +53,9 @@
                             </td>
                             <td>
                                 {{ $course->name ?? '' }}
+                            </td>
+                            <td>
+                                {{ $course->price ?? '' }}
                             </td>
                             <td>
                                 @if($course->cover)

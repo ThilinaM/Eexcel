@@ -53,6 +53,30 @@
                     </tr>
                     <tr>
                         <th>
+                            {{ trans('cruds.course.fields.price') }}
+                        </th>
+                        <td>
+                            {{ $course->price }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.course.fields.link_text') }}
+                        </th>
+                        <td>
+                            {{ $course->link_text }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.course.fields.link') }}
+                        </th>
+                        <td>
+                            {{ $course->link }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
                             {{ trans('cruds.course.fields.status') }}
                         </th>
                         <td>

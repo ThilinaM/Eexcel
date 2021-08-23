@@ -15,7 +15,7 @@ class CourseTableSeeder extends Seeder
     public function run()
     {
         //
-         $cources = [
+        $cources = [
             [
                 'id'             => 1,
                 'name'           => 'Advanced Spoken English',
@@ -35,6 +35,10 @@ class CourseTableSeeder extends Seeder
 <p>වඩාත් ව්‍යක්ත ගැඹුරු අදහස් ප්‍රකාශ කිරීම සදහා ඉවහල් වන උසස් ව්‍යාකරණ රටාවන්</p>
 <p>ඔබ‍ට මෙතෙක් නිරවුල්ව අදහස් ප්‍රකාශ කිරීමට නොහැකිව තිබු බොහෝ පරාසයක පැහැදිලිව අදහස් ප්‍රකාශ කිරීමේ හැකියාව වර්ධනය.</p>
 <p>ඔබේ ඉංග්‍රීසි භාෂා හැකියාවන් ඉතා ඉහල මට්ටමකට නංවන මේ වටිනා දැනුම් සම්භාරය ඇත කර ගැනීමට ඔබ යෙදිය යුත්තේ දිනපතා ඔබේ කාලයෙන් විනාඩි 20 -30 ක්‌ පමණයි.</p>',
+                'status' => 'Active',
+                'price' => 'For just 950 /=',                
+                'link_text' => 'click to get 5 free lessons',
+                'link' => '/login',
             ],
             [
                 'id'             => 2,
@@ -61,6 +65,10 @@ class CourseTableSeeder extends Seeder
 <p>නිරවුල්ව නොපැකිලව එදිනෙදා සංවාද පවත්වා ගෙන යාමට අවශ්‍ය දැනුම සහ හැකියාව නියත ලෙස වර්ධනය කරවයි</p>
 <p>දිනකට විනාඩි 30 ක පරිශීලනයෙන් දින 200 කදී ඔබ‍ට කදිම ලෙස එදිනෙදා ඉංග්‍රීසි සංවාද හැසිරවීමේ හැකියාව ලබා ගත හැකියි.</p>
                 ',
+                'status' => 'Active',
+                'price' => 'For just 950 /=',
+                'link_text' => 'click to get 5 free lessons',
+                'link' => '/login',
             ],
         ];
 

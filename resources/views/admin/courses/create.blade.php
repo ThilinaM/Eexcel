@@ -56,6 +56,36 @@
                 <span class="help-block">{{ trans('cruds.course.fields.status_helper') }}</span>
             </div>
             <div class="form-group">
+              <label for="price">{{ trans('cruds.course.fields.price') }}</label>
+              <input class="form-control {{ $errors->has('price') ? 'is-invalid' : '' }}" type="text" name="price" id="price" value="{{ old('price', '') }}">
+              @if($errors->has('price'))
+                  <div class="invalid-feedback">
+                      {{ $errors->first('price') }}
+                  </div>
+              @endif
+              <span class="help-block">{{ trans('cruds.course.fields.price_helper') }}</span>
+          </div>
+          <div class="form-group">
+            <label for="link_text">{{ trans('cruds.course.fields.link_text') }}</label>
+            <input class="form-control {{ $errors->has('link_text') ? 'is-invalid' : '' }}" type="text" name="link_text" id="link_text" value="{{ old('link_text', '') }}">
+            @if($errors->has('link_text'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('link_text') }}
+                </div>
+            @endif
+            <span class="help-block">{{ trans('cruds.course.fields.link_helper') }}</span>
+        </div>
+          <div class="form-group">
+            <label for="link">{{ trans('cruds.course.fields.link') }}</label>
+            <input class="form-control {{ $errors->has('link') ? 'is-invalid' : '' }}" type="text" name="link" id="link" value="{{ old('link', '') }}">
+            @if($errors->has('link'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('link') }}
+                </div>
+            @endif
+            <span class="help-block">{{ trans('cruds.course.fields.link_helper') }}</span>
+        </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     {{ trans('global.save') }}
                 </button>

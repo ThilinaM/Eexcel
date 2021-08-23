@@ -91,6 +91,12 @@ return [
             'updated_at_helper'  => ' ',
             'deleted_at'         => 'Deleted at',
             'deleted_at_helper'  => ' ',
+            'price' => 'Price',
+            'link_text' => 'Link Text',
+            'link_text_helper' => '',
+            'link' => 'Link',
+            'link_helper' => '',
+            'price_helper' => '',
         ],
     ],
     'userAlert' => [
