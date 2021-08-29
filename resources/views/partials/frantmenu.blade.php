@@ -3,7 +3,7 @@
     <div class="c-sidebar-brand d-md-down-none">
         <a class="c-sidebar-brand-full h4" href="#">
             {{-- {{ trans('panel.site_title') }} --}}
-            <img src="img/logo.png" alt="logo"> 
+            <img src="{{asset('img/logo.png')}}" alt="logo"> 
         </a>
     </div>
 
@@ -60,7 +60,7 @@
         @endcan
         @can('course_access')
             <li class="c-sidebar-nav-item">
-                <a href="{{ route("admin.courses.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/courses") || request()->is("admin/courses/*") ? "c-active" : "" }}">
+                <a href="{{ route('frontend.courses.index') }}" class="c-sidebar-nav-link {{ request()->is("admin/courses") || request()->is("admin/courses/*") ? "c-active" : "" }}">
                     <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
 
                     </i>
@@ -70,7 +70,7 @@
         @endcan
         @can('lesson_access')
             <li class="c-sidebar-nav-item">
-                <a href="{{ route("admin.lessons.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/lessons") || request()->is("admin/lessons/*") ? "c-active" : "" }}">
+                <a href="{{ route("frontend.lessons.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/lessons") || request()->is("admin/lessons/*") ? "c-active" : "" }}">
                     <i class="fa-fw fas fa-book c-sidebar-nav-icon">
 
                     </i>
@@ -80,7 +80,7 @@
         @endcan
         @can('user_alert_access')
             <li class="c-sidebar-nav-item">
-                <a href="{{ route("admin.user-alerts.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/user-alerts") || request()->is("admin/user-alerts/*") ? "c-active" : "" }}">
+                <a href="{{ route("frontend.user-alerts.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/user-alerts") || request()->is("admin/user-alerts/*") ? "c-active" : "" }}">
                     <i class="fa-fw fas fa-bell c-sidebar-nav-icon">
 
                     </i>

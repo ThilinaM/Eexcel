@@ -21,7 +21,7 @@ class CoursesController extends Controller
     {
         abort_if(Gate::denies('course_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $courses = Course::with(['media'])->get();
+        $courses = Course::with(['media'])->Where('status','Active')->get();
 
         return view('frontend.courses.index', compact('courses'));
     }
